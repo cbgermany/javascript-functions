@@ -56,10 +56,10 @@ const getLivingNeighbors = (cell, state) => {
 };
 
 const willBeAlive = (cell, state) => {
-  const livingNeghbors = getLivingNeighbors(cell, state);
+  const livingNeighbors = getLivingNeighbors(cell, state);
 
   return (
-    livingNeighbours.length === 3 ||
+    livingNeighbors.length === 3 ||
     (contains.call(state, cell) && livingNeighbors.length === 2)
   );
 };
